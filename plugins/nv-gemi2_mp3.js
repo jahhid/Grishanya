@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /заебись|отлично|ахуенно|gemime|Фраза/i
+handler.customPrefix = /заебись|отлично|ахуенно|Заебись|Фраза/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

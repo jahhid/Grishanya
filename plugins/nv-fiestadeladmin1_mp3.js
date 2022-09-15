@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /дурак|дебил|мудак|/
+handler.customPrefix = /Дурак|дурак|мудак|/
 handler.command = new RegExp
 export default handler

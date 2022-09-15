@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /доброе утро|салам|салют|Ho me vengo|Oh me vengo|O me vengo/
+handler.customPrefix = /Доброе утро|Салам|Салют|салют|Oh me vengo|O me vengo/
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

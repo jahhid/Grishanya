@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /привет|дратути|vivanlosnovios/i
+handler.customPrefix = /Привет|Дратути|vivanlosnovios/i
 handler.command = new RegExp
 
 handler.fail = null

@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /тишина|где все|Viernes|viernes fiesta/
+handler.customPrefix = /Тишина|Где все|Viernes|viernes fiesta/
 handler.command = new RegExp
 export default handler
