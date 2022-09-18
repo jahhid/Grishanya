@@ -9,7 +9,7 @@ setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
 ╭─[ *Grishanya* ]
-│ *➤ Салам Алейкум ${name}*
+│ *➤ Салют ${name}*
 │
 │ *ミ🤖 СТАТУС БОТА🤖彡*
 │ *=> АКТИВНЫЙ БОТ ✅*

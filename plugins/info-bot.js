@@ -14,7 +14,7 @@ message: {
 
 if (/^komar$/i.test(m.text)) {
     
-conn.sendButton(m.chat, '*Салам Алейкум, МОГУ Я ЧЕМ-НИБУДЬ ПОМОЧЬ?*', wm, [['МЕНЮ КОМАНД', `#меню`]], 'Беседа', { sendEphemeral: true, quoted: estilo })
+conn.sendButton(m.chat, '*Салют, МОГУ Я ЧЕМ-НИБУДЬ ПОМОЧЬ?*', wm, [['МЕНЮ КОМАНД', `#меню`]], 'Беседа', { sendEphemeral: true, quoted: estilo })
 conn.sendFile(m.chat, vn, 'Komar.jpg', null, m, true, { type: 'jpg', images: true, sendEphemeral: true, quoted: estiloimages })   
 }
 return !0
