@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Цитата|Слово|слова|да ну нахуй|fiestadeladmin3|fiesta en casa de uriel/i
+handler.customPrefix = /Цитата|Слово|слова|да ну нахуй|хуй|Хуй/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /соски|Сиськи|Noche de amor|noche de amor|Noche de Paz/
+handler.customPrefix = /соски|Сиськи|грудь|noche de amor|Noche de Paz/
 handler.command = new RegExp
 export default handler
 
