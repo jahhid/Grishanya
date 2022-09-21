@@ -17,7 +17,7 @@ say('Grishanya BoT\nDzheka Vorobey', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Sozdatel Bota Dzheka Vorobey. Esli u vas budut voprosy po Botu napishi mne v Ls`, {
+say(`Sozdatel Bota Dzheka Vorobey.`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
