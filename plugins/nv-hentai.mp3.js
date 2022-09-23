@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /audio hentai|Хай|Здарова|Audiohentai/i
+handler.customPrefix = /здарова|Хай|Здарова|приветствую/i
 handler.command = new RegExp
 export default handler

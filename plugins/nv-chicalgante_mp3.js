@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /Вася|музыка|косяк|бухнуть|chical gante|Chical gante/
+handler.customPrefix = /покурить|музыка|косяк|бухнуть|сиги|сигареты/
 handler.command = new RegExp
 export default handler

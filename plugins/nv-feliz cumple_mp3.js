@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /погуляю|пошли|лс/i
+handler.customPrefix = /гуляю|пошли|бухать/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

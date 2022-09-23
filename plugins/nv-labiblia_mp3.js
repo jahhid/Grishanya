@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /Вопрос|Вопросы|вопрос|спрашивай|La oración|la biblia|La Biblia/
+handler.customPrefix = /Вопрос|Вопросы|вопрос|нахуй|La oración|la biblia|La Biblia/
 handler.command = new RegExp
 export default handler
