@@ -5,7 +5,7 @@ let text = `
 *—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//++79997187212*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com` },
+'document': { url: `https://chat.whatsapp.com` },
 'mimetype': `application/${document}`,
 'fileName': `「БОТ Grishanya 」`,
 'fileLength':'./Komar.jpg',
@@ -14,7 +14,7 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com',
+'mediaUrl': 'https://chat.whatsapp.com',
 'mediaType': 2,
 'previewType': 'jpg',
 'title': 'ЛУЧШИЙ БОТ WhatsApp',

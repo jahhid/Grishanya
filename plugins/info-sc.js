@@ -12,7 +12,7 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com',
+'mediaUrl': 'https://chat.whatsapp.com',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'Лучший бот для ᴡʜᴀᴛsᴀᴘᴘ⁩',

@@ -18,7 +18,7 @@ let estado =`
 ╰───────────────
 `.trim()
 
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://chat.whatsapp.com', 'ГРУППА', null, null, [
 ['ГЛАВНОЕ МЕНЮ', '/меню']
 ], m)}
 

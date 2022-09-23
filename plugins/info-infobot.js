@@ -41,7 +41,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: 'ИНФО ОБ ЭТОМ БОТЕ',
 body: 'Grishanya',         
 previewType: 0, thumbnail: fs.readFileSync("./Grishanya.jpg"),
-sourceUrl: `https://github.com/jahhid`}}})
+sourceUrl: `https://chat.whatsapp.com`}}})
 }
 handler.help = ['infobot', 'speed']
 handler.tags = ['info', 'tools']

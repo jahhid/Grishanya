@@ -50,7 +50,7 @@ let str = `
 ° ඬ⃟🗳️ _${usedPrefix}eliminarimg *<texto/comando/palabra clave>*_
 ° ඬ⃟🗳️ _${usedPrefix}eliminarsticker *<texto/comando/palabra clave>*_`.trim()
 
-conn.sendHydrated(m.chat, str, wm, pp, 'https://yandex.ru/images/search?from=tabbar&text=хуй%20тебе', 'FUCK', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
 ['ГЛАВНОЕ МЕНЮ', '/меню']
 ], m)
 }}
