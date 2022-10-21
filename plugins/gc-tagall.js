@@ -5,10 +5,10 @@ throw false
 }
 let pesan = args.join` `
 let oi = `*СООБЩЕНИЕ:* ${pesan}`
-let teks = `*⺀☆ УЧАСТНИКИ ГРУППЫ ☆⺀*\n\n❏ ${oi}\n\n❏ *СПИСОК:*\n`
+let teks = `*⺀ ВНИМАНИЕ - ГРУППА ⺀*\n\n❏ ${oi}\n\n❏ *ТЕГИ:*\n`
 for (let mem of participants) {
 teks += `┣➥ @${mem.id.split('@')[0]}\n`}
-teks += `*└* 𝐁𝐲 Grishanya  \n\n*▌│█║▌║▌║║▌║▌║▌║█*`
+teks += `*└* Бот Гришаня  ᷦ\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']

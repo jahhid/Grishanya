@@ -26,10 +26,10 @@ try {
 let stiker = await sticker(null, apiUrl, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) {
-m.reply('*_⚠️ Ocurrió un error al hacer la conversión a sticker_*\n\n*_✳️ Enviando imagen en su lugar..._*')
+m.reply('*_⚠️ Произошла ошибка при преобразовании в sticker_*\n\n*_✳️ Отправка изображения вместо..._*')
 await conn.sendFile(m.chat, apiUrl, 'image.png', null, m)
 }}
 handler.help = ['stickfilter (caption|reply media)']
 handler.tags = ['General']
-handler.command = /^(stickerfilter|stikerfilter|cs2)$/i
+handler.command = /^(стикерфильтр|stikerfilter|cs2)$/i
 export default handler

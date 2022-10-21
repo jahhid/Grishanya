@@ -96,7 +96,7 @@ caption += `
 `}
 await conn.reply(m.chat, caption, m)}
 
-if (command == 'uapkpro') {
+if (command == 'ух') {
 let json = await fetch(`https://dhn-api.herokuapp.com/api/apk/uapkpro?apps=${text}&apikey=4ca83deeb14d61d16cf0`)
 let jsons = await json.json()
 let caption = `*⎔┉━「 ${command} 」━┉⎔*\n`
@@ -108,5 +108,5 @@ caption += `
 await conn.reply(m.chat, caption, m)}
 
 }
-handler.command = ['apkdone', 'apkgoogle', 'apkmody', 'apkshub', 'happymod', 'hostapk', 'revdl', 'toraccino', 'uapkpro']
+handler.command = ['арк', 'apkgoogle', 'apkmody', 'apkshub', 'happymod', 'hostapk', 'revdl', 'toraccino', 'uapkpro']
 export default handler

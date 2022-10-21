@@ -2,30 +2,31 @@ let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
-*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//++79997187212*
+*—◉ НОМЕР МОЕГО ВЛАДЕЛЬЦА wa.me//+79010070455*
+*—◉ НОМЕР МОЕГО ВЛАДЕЛЬЦА wa.me//+79773452127*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://chat.whatsapp.com` },
+'document': { url: `https://` },
 'mimetype': `application/${document}`,
-'fileName': `「БОТ Grishanya 」`,
-'fileLength':'./Komar.jpg',
+'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://chat.whatsapp.com',
+'mediaUrl': 'https://',
 'mediaType': 2,
-'previewType': 'jpg',
-'title': 'ЛУЧШИЙ БОТ WhatsApp',
+'previewType': 'pdf',
+'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://chat.whatsapp.com' }},
+'sourceUrl': '▁▂▃▅▆█ПУЛЯ█▆▅▃▂▁' }},
 'caption': text,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}меню`, buttonText: {displayText: 'МЕНЮ'}, type: 1}, 
-{buttonId: `${usedPrefix}владелец`, buttonText: {displayText: 'ХОЗЯИН'}, type: 1}],
+{buttonId: `${usedPrefix}menu`, buttonText: {displayText: ''}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: ''}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator)
@@ -33,5 +34,5 @@ await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
-handler.command = /^(владелец|creator|creador|propietario)$/i
+handler.command = /^(создатель|creator|owner|creador|propietario)$/i
 export default handler

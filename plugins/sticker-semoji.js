@@ -5,13 +5,13 @@ const emoji = new EmojiAPI()
 
 let handler = async (m, { conn, args, usedPrefix, command, isPrems }) => {
 let er = `
-*[❗] 𝙴𝙻 𝚄𝚂𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝙴𝚂*
+*[❗] ПРАВИЛЬНО ИСПОЛЬЗОВАНИЕ КОМАНДЫ*
 *◉ ${usedPrefix + command} <tipo> <emoji>*
 
-*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*
+*—◉ ПРИМЕР:*
 *◉ ${usedPrefix + command}* fa 😎
 
-*—◉ 𝚃𝙸𝙿𝙾𝚂* 
+*—◉ ТИПЫ* 
 
 *◉ wha = whatsapp* 
 *◉ ap = apple*
@@ -26,7 +26,7 @@ let er = `
 *◉ sa = samsung*
 *◉ tw = twitter*
 
-*—◉ 𝚂𝙾𝙻𝙾 𝚄𝚂𝙰𝚁 𝚄𝙽 𝙴𝙼𝙾𝙹𝙸 𝚈 𝚁𝙴𝚂𝙿𝙴𝚃𝙴 𝙻𝙾𝚂 𝙴𝚂𝙿𝙰𝙲𝙸𝙾𝚂*`
+*—◉ ПРОСТО ИСПОЛЬЗУЙТЕ ЭМОДЗИ И УВАЖАЙТЕ ПРОБЕЛЫ*`
 
 if (!args[0]) throw er
 let template = (args[0] || '').toLowerCase()
@@ -144,5 +144,5 @@ throw er
 }}}
 handler.help = ['emoji <tipo> <emoji>']
 handler.tags = ['sticker'] 
-handler.command = ['стикерэмоции', 'smoji', 'semoji']
+handler.command = ['эмодзи', 'smoji', 'semoji']
 export default handler

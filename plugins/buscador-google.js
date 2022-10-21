@@ -3,7 +3,7 @@ let handler = async (m, { conn, command, args }) => {
 const fetch = (await import('node-fetch')).default
 let full = /f$/i.test(command)
 let text = args.join` `
-if (!text) return conn.reply(m.chat, '*[❗ИНФО❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙻 𝚃𝙴𝚇𝚃𝙾 𝙾 𝚃𝙴𝙼𝙰 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝙱𝚄𝚂𝙲𝙰𝚁*', m)
+if (!text) return conn.reply(m.chat, '*[❗ИНФО❗] ВВЕДИТЕ ТЕКСТ ИЛИ ТЕМУ КОТОРУЮ ВЫ ХОТИТЕ НАЙТИ*', m)
 let url = 'https://google.com/search?q=' + encodeURIComponent(text)
 let search = await googleIt(text)
 let msg = search.articles.map(({
@@ -21,7 +21,7 @@ await conn.sendFile(m.chat, ss, 'error.png', url + '\n\n' + msg, m)
 } catch (e) {
 m.reply(msg)
 }}
-handler.help = ['google', 'googlef'].map(v => v + ' <pencarian>')
+handler.help = ['google', 'googlef', 'гугол'].map(v => v + ' <pencarian>')
 handler.tags = ['internet']
-handler.command = /^googlef?$/i
+handler.command = /^гугол?$/i
 export default handler

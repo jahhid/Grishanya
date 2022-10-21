@@ -2,20 +2,20 @@ import fs from "fs"
 let handler = m => m
 
 handler.all = async function (m) {
-let vn = './media/Komar.jpg'
-const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
+let vn = './media/bot.mp3'
+const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "79010070455-1625305606@g.us" } : {}) },
 message: { 
-orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Grishanyaᷦ', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'    
+orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Бот Гришаня  ᷦ', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'    
 }}}
-const estiloimages = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) },
+const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "79010070455-1625305606@g.us" } : {}) },
 message: { 
-"images": { "mimetype":"images/jpg; codecs=opus", "seconds": "99569", "images": "true"   
+"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"   
 }}}  
 
-if (/^komar$/i.test(m.text)) {
+if (/^bot$/i.test(m.text)) {
     
-conn.sendButton(m.chat, '*Салют, МОГУ Я ЧЕМ-НИБУДЬ ПОМОЧЬ?*', wm, [['МЕНЮ КОМАНД', `#меню`]], 'Беседа', { sendEphemeral: true, quoted: estilo })
-conn.sendFile(m.chat, vn, 'Komar.jpg', null, m, true, { type: 'jpg', images: true, sendEphemeral: true, quoted: estiloimages })   
+conn.sendButton(m.chat, '*ПРИВЕТ, ¿КАК Я МОГУ ВАМ ПОМОЧЬ?*', wm, [], 'conversation', { sendEphemeral: true, quoted: estilo })
+conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true, quoted: estiloaudio })   
 }
 return !0
 }
