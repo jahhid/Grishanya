@@ -8,8 +8,8 @@ if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
 let res = await fetch('https://nekos.life/api/kiss')
 let json = await res.json()
 let { url } = json
-let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} Он поцеловал ее${m.mentionedJid.map((user)=>(user === m.sender)? 'кто-то ': `+${user.split('@')[0]}`).join(', ')}`)
+let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio besos a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 } catch (e) { }}
-handler.command = /^(поцелуй|skiss|kis|besos|beso)$/i
+handler.command = /^(kiss|skiss|kis|besos|beso)$/i
 export default handler

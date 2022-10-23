@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let picture = './Menu2.jpg'
+let picture = './Grishanya.jpg'
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
 let _muptime
@@ -8,23 +8,23 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
-╭─[ *Бот Гришаня  ᷦ* ]
-│ *➤ ПРИВЕТ ${name}*
+╭─[ *Grishanya* ]
+│ *➤ Салют ${name}*
 │
-│ *ミ🤖 СТАТУС БОТА 🤖彡*
-│ *=> БОТ АКТИВНЫЙ ✅*
-│ *=> БОТ ОБЩЕГО ПОЛЬЗОВАНИЯ ✅*
+│ *ミ🤖 СТАТУС БОТА🤖彡*
+│ *=> АКТИВНЫЙ БОТ ✅*
+│ *=> ПУБЛИЧНЫЙ БОТ ✅*
 │ *=> АКТИВНОЕ ВРЕМЯ: ${uptime}*
 ╰───────────────
 `.trim()
 
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://avatars.mds.yandex.net/i?id=3a29ae911242302e5855a4f65978e0bb-4961046-images-thumbs&n=13', 'НЕ СМОТРИ', null, null, [
-['ПОЛНОЕ МЕНЮ', '/menu']
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://chat.whatsapp.com', 'ГРУППА', null, null, [
+['ГЛАВНОЕ МЕНЮ', '/меню']
 ], m)}
 
 handler.help = ['estado']
 handler.tags = ['main']
-handler.command = /^(статус|status|estate|state|stado|stats)$/i
+handler.command = /^(estado|статус|estate|state|stado|stats)$/i
 export default handler
 
 function clockString(ms) {

@@ -13,25 +13,25 @@ await m.reply(boost5)
 let old = performance.now()
 let neww = performance.now()
 let speed = `${neww - old}`
-let doxeo = `*[ ✔ ] УСПЕШНО ДОКСИРОВАННОЕ ЛИЦО *\n*⏳ РЕЖИМ *Ip* : ${speed} секунд!*
+let doxeo = `*[ ✔ ] 𝙿𝙴𝚁𝚂𝙾𝙽𝙰 𝙳𝙾𝚇𝚇𝙴𝙰𝙳𝙰 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾*\n*⏳ 𝙳𝙾𝚇𝚇𝙴𝙰𝙳𝙾 𝙴𝙽: ${speed} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜!*
 
-*ПОЛУЧЕННЫЕ РЕЗУЛЬТАТЫ:*
+*𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾𝚂 𝙾𝙱𝚃𝙴𝙽𝙸𝙳𝙾𝚂:*
 
-*Имя:* ${text}
+*Nombre:* ${text}
 *Ip:* 92.28.211.234
 *N:* 43 7462
 *W:* 12.4893
-*НОМЕР SS:* 6979191519182016
+*SS NUMBER:* 6979191519182016
 *IPV6:* fe80::5dcd::ef69::fb22::d9888%12 
 *UPNP:* Enabled
 *DMZ:* 10.112.42.15
 *MAC:* 5A:78:3E:7E:00
-*Интернет провайдор:* Ucom unversal 
+*ISP:* Ucom unversal 
 *DNS:* 8.8.8.8
 *ALT DNS:* 1.1.1.8.1  
-*СУФФИКС DNS:* Dlink
+*DNS SUFFIX:* Dlink
 *WAN:* 100.23.10.15
-*ТИП WAN:* чвстный дом
+*WAN TYPE:* private nat
 *GATEWAY:* 192.168.0.1
 *SUBNET MASK:* 255.255.0.255
 *UDP OPEN PORTS:* 8080.80
@@ -57,7 +57,7 @@ conn.reply(m.chat, doxeo, m)
 }
 handler.help = ['doxear <nombre> | <@tag>']
 handler.tags = ['fun']
-handler.command = /^листА|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
+handler.command = /^Doxxeo|doxxeo|doxxear|Doxxear|doxeo|doxear|doxxeame|doxeame/i
 export default handler
 
 function pickRandom(list) {

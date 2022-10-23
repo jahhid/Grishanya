@@ -1,4 +1,4 @@
-console.log('✅ㅤИнициализация Бота...')
+console.log('✅ㅤИнициализация...')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -13,11 +13,11 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Bot GrIShAnYa', {
+say('Grishanya BoT\nDzheka Vorobey', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Ураа я увидел белый свет своими глазами, Создатель, Ты красавчик`, {
+say(`Sozdatel Bota Dzheka Vorobey.`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -32,7 +32,7 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say('♱✞✟ QR', {
+say('Nastroyte ekran dlya scanirovaniya coda QR', {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -42,14 +42,14 @@ exec: args[0],
 args: args.slice(1), })
 let p = fork()
 p.on('message', data => {
-console.log('[RECEIVED]', data)
+console.log('[ПОЛУЧЕННЫЙ]', data)
 switch (data) {
 case 'reset':
 p.process.kill()
 isRunning = false
 start.apply(this, arguments)
 break
-case 'uptime':
+case 'время безотказной работы':
 p.send(process.uptime())
 break }})
 p.on('exit', (_, code) => {

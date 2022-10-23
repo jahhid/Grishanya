@@ -1,26 +1,26 @@
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let isClose = { // Switch Case Like :v
-'open': 'not_announcement',
-'close': 'announcement',
+'открыть': 'без объявления',
+'закрыть': 'объявление',
 'abierto': 'not_announcement',
 'cerrado': 'announcement',
-'открыть': 'not_announcement',
-'закрыть': 'announcement',
+'открыта': 'без объявления',
+'закрыта': 'объявление',
 }[(args[0] || '')]
 if (isClose === undefined)
 throw `
-*[❗] ВЫБЕРИТЕ КОМАНДУ!!*
+*[❗] НЕВЕРНЫЙ ФОРМАТ!!*
 
-*┏━━━❲ ✨НАПРИМЕР✨ ❳━━━┓* 
+*┏━━━❲ ✨ПРИМЕР✨ ❳━━━┓* 
 *┠┉↯ ${usedPrefix + command} открыть*
 *┠┉↯ ${usedPrefix + command} закрыть*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
-{m.reply('*[ ✔ ] КОМАНДА ВЫПОЛНЕНА*')}
+{m.reply('*[ ✔ ] ГРУППА НАСТРОЕНА ПРАВИЛЬНО*')}
 }
-handler.help = ['group открыть / закрыть', 'grupo abrir / cerrar']
+handler.help = ['группа открыть / закрыть', 'grupo abrir / cerrar']
 handler.tags = ['group']
-handler.command = /^(группа|group|grupo)$/i
+handler.command = /^(группа|grupo)$/i
 handler.admin = true
 handler.botAdmin = true
 export default handler

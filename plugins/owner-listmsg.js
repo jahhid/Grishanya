@@ -1,9 +1,9 @@
 let handler = m => {
 let msgs = global.db.data.msgs
 m.reply(`
-*🔰 СПИСОК ТЕКСТОВЫХ СООБЩЕНИЙ КЛЮЧЕВЫХ СЛОВ 🔰*
+*🔰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝚃𝙴𝚇𝚃𝙾𝚂/𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂/𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙲𝙻𝙰𝚅𝙴𝚂 🔰*
 
-*✳️ СООБЩЕНИЯ ✳️*
+*✳️ 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 ✳️*
 ${Object.keys(msgs).map(v => '*👉🏻 ' + v).join('*\n*')}*
 `.trim())
 }

@@ -19,7 +19,7 @@ await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }
 handler.help = ['pengumuman', 'announce', 'hidetag'].map(v => v + ' [teks]')
 handler.tags = ['group']
-handler.command = /^(opengumuman|oannounce|ohiddentag|hidetag|notificar|вызов|notify|notifi)$/i
+handler.command = /^(opengumuman|oannounce|ohiddentag|скрытьтег|notificar|noti|notify|notifi)$/i
 handler.group = true
 handler.admin = true
 export default handler
