@@ -1,7 +1,7 @@
 {
-    "name": "Grishanya",
+    "name": "TheMystic-Bot-MD",
     "version": "1.0.0",
-    "description": "Regalame tu sub en YouTube uwu",
+    "description": "Subscribete al canal de YT The Shadow Borkers",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -11,12 +11,12 @@
     },
     "scripts": {
         "start": "node index.js",
-        "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
+        "test": "node test.js",
+        "test2": "nodemon index.js"
     },
     "homepage": "https://github.com/jahhid/Grishanya",
     "author": {
-        "name": "Dzheka Vorobey"
+        "name": "Jahhid"
     },
     "repository": {
         "type": "git",
@@ -25,10 +25,11 @@
     "bugs": {
         "url": "https://github.com/jahhid/Grishanya/issues"
     },
-    "license": "MIT",
+    "license": "GPL-3.0-or-later",
     "dependencies": {
-        "@adiwajshing/baileys": "^4.1.0",
-        "@bochilteam/scraper": "^2.0.0",
+        "@adiwajshing/baileys": "^4.4.0",
+        "@bochilteam/scraper": "^3.0.0",
+        "acrcloud": "^1.4.0",
         "awesome-phonenumber": "^2.68.0",
         "axios": "^0.24.0",
         "cfonts": "^2.10.0",
@@ -37,6 +38,7 @@
         "colors": "1.4.0",
         "emoji-api": "^1.0.2",
         "express": "^4.17.3",
+        "fg-ig": "^0.0.1",
         "file-type": "^17.1.1",
         "fluent-ffmpeg": "^2.1.2",
         "formdata-node": "^4.3.2",
@@ -46,6 +48,7 @@
         "link-preview-js": "^2.1.13",
         "lodash": "^4.17.21",
         "lowdb": "^3.0.0",
+        "moment-timezone": "^0.5.34",
         "mongoose": "^6.3.3",
         "node-fetch": "^3.2.0",
         "node-gtts": "^2.0.2",

@@ -1,6 +1,6 @@
 import { webp2png } from '../lib/webp2mp4.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
-const notStickerMessage = `*[❗ИНФО❗] ОТВЕТЬТЕ НА НАКЛЕЙКУ, КОТОРУЮ ВЫ ХОТИТЕ ПРЕОБРАЗОВАТЬ В ИЗОБРАЖЕНИЕ, С ПОМОЩЬЮ КОМАНДЫ ${usedPrefix + command}*`
+const notStickerMessage = `*[❗𝐈𝐍𝐅𝐎❗] ОТВЕТЬ НА СТИКЕР КОТОРУЮ ВЫ ХОТИТЕ ПРЕОБРОЗОВАТЬ В ИЗОБРАЖЕНИЯ С ПОМОЩЬЮ КОМАНДЫ ${usedPrefix + command}*`
 if (!m.quoted) throw notStickerMessage
 const q = m.quoted || m
 let mime = q.mediaType || ''
@@ -11,5 +11,5 @@ await conn.sendFile(m.chat, out, 'error.png', null, m)
 }
 handler.help = ['toimg (reply)']
 handler.tags = ['sticker']
-handler.command = ['визображение', 'jpg', 'img']
+handler.command = ['преоброзовать', 'jpg', 'img']
 export default handler

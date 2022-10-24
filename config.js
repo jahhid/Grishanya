@@ -3,13 +3,22 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
 
-
 global.owner = [
-  ['+79997187212', 'Grishanya', true],
-  ['+79997187212', 'Dzheka Vorobey', true],
-] // Cambia los numeros que quieras
-global.mods = [] 
-global.prems = [] 
+  ['79773452127', '👑  Grishanya-Жека Воробей 👑', true],
+] 
+global.suittag = ['79773452127'] 
+global.prems = ['79773452127'] 
+
+global.packname = '(☞Grishanya)☞'
+global.author = '★Гришаня - 𝙱𝚘𝚝★'
+global.wm = '★Гришаня - 𝙱𝚘𝚝★'
+global.igfg = '★Гришаня - 𝙱𝚘𝚝★'
+global.wait = '*[❗]Загрузка подождите минутку'
+
+global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
+global.lolkeysapi = ['85faf717d0545d14074659ad']
+
 global.APIs = { // API Prefix
   // name: 'https://website'
   amel: 'https://melcanz.com',
@@ -62,38 +71,25 @@ global.APIKeys = { // APIKey Here
   'https://violetics.pw': 'beta'
 }
 
-// Sticker WM
-global.packname = 'Grishanya  ᷦ×͜×'
-global.author = 'Dzheka Vorobey'
-
-global.wm = 'Dzheka Vorobey'
-global.igfg = 'Dzheka Vorobey'
-global.wait = '*⌛ _Загрузка..._ ▬▬▬▭*'
-
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
 
+global.mods = [] 
+
 global.multiplier = 9999 
-
 global.rpg = {
-  emoticon(string) {
-    string = string.toLowerCase()
-    let emot = {
-      level: '🏆',
-      limit: '💎',
-      exp: '🕹️'
-    }
-    let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
-    if (!results.length) return ''
-    else return emot[results[0][0]]
-  }
-}
-
-
+emoticon(string) {
+string = string.toLowerCase()
+let emot = {
+level: '🏆',
+limit: '💎',
+exp: '🕹️'}
+let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
+if (!results.length) return ''
+else return emot[results[0][0]]}}
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
-  unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
-})
+unwatchFile(file)
+console.log(chalk.redBright("Update 'config.js'"))
+import(`${file}?update=${Date.now()}`)})

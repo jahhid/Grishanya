@@ -1,10 +1,11 @@
 let handler = async (m, { conn }) => {
 let prem = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)
-  conn.reply(m.chat, `*「 ☆☬ПОЛЬЗОВАТЕЛИ ПРЕМИУМ☬☆ 」*
-` + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, m, { contextInfo: { mentionedJid: prem } })
+let textprem = `*「 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 」*
+` + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`
+m.reply(textprem, null, {mentions: conn.parseMention(textprem)})
 }
 handler.help = ['premlist']
 handler.tags = ['owner']
-handler.command = /^(списокпремиум|premlist)$/i
+handler.command = /^(листпремиум|premlist)$/i
 handler.rowner = true
 export default handler

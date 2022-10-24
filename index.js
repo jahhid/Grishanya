@@ -1,4 +1,4 @@
-console.log('✅ㅤИнициализация...')
+console.log('✅ㅤIniciando...')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -13,11 +13,11 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('Grishanya BoT\nDzheka Vorobey', {
+say('Mystic - Bot\nWhatsApp Bot MD', {
 font: 'chrome',
 align: 'center',
 gradient: ['red', 'magenta']})
-say(`Sozdatel Bota Dzheka Vorobey.`, {
+say(`Bot creado por Bruno Sobrino`, {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -32,7 +32,7 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say('Nastroyte ekran dlya scanirovaniya coda QR', {
+say('Ajuste la pantalla para escanear el codigo QR', {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']})
@@ -42,19 +42,24 @@ exec: args[0],
 args: args.slice(1), })
 let p = fork()
 p.on('message', data => {
-console.log('[ПОЛУЧЕННЫЙ]', data)
+console.log('[RECEIVED]', data)
 switch (data) {
 case 'reset':
 p.process.kill()
 isRunning = false
 start.apply(this, arguments)
 break
-case 'время безотказной работы':
+case 'uptime':
 p.send(process.uptime())
 break }})
 p.on('exit', (_, code) => {
 isRunning = false
-console.error('❎ㅤПроизошла непредвиденная ошибка:', code)
+console.error('❎ㅤOcurrio un error inesperado:', code)
+  
+p.process.kill()
+isRunning = false
+start.apply(this, arguments)
+  
 if (code === 0) return
 watchFile(args[0], () => {
 unwatchFile(args[0])

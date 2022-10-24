@@ -2,15 +2,15 @@ const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 
 let handler = async (m, { conn, usedPrefix }) => {
-let pp = './Komar.jpg'
+let pp = './Menu2.jpg'
 try {
 } catch (e) {
 } finally {
 let name = await conn.getName(m.sender)
 let str = `
-*_ミ💖 Прювейт! ${name} 💖彡_*
+*_ミ💖 𝙷𝙾𝙻𝙰 ${name} 💖彡_*
 
-ㅤㅤ *🗳️<БЕЗОПАСНОСТЬ/>🔐*
+ㅤㅤ *🗳️<ℂ𝔸𝕁𝔸 𝔽𝕌𝔼ℝ𝕋𝔼/>🔐*
 
 - 𝙰𝚀𝚄𝙸 𝙿𝚄𝙴𝙳𝙴 𝙶𝚄𝙰𝚁𝙳𝙰𝚁 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝚀𝚄𝙴 𝚀𝚄𝙸𝙴𝚁𝙰𝚂 𝚅𝙴𝚁 𝙼𝙰𝚂 𝚃𝙰𝚁𝙳𝙴
 
@@ -50,13 +50,13 @@ let str = `
 ° ඬ⃟🗳️ _${usedPrefix}eliminarimg *<texto/comando/palabra clave>*_
 ° ඬ⃟🗳️ _${usedPrefix}eliminarsticker *<texto/comando/palabra clave>*_`.trim()
 
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['ГЛАВНОЕ МЕНЮ', '/меню']
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
 ], m)
 }}
 handler.help = ['cajafuerte']
 handler.tags = ['owner']
-handler.command = /^(безопасность)$/i
+handler.command = /^(cajafuerte)$/i
 handler.rowner = true
 handler.fail = null
 export default handler

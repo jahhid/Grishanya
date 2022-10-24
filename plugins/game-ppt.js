@@ -1,61 +1,63 @@
-let handler = async (m, { text, usedPrefix }) => {
-let INTROJUEGO = `*𝙷𝙾𝙻𝙰 👋🏻, 𝙴𝚂𝚃𝙰𝚂 𝙹𝚄𝙶𝙰𝙽𝙳𝙾 𝙰 "𝙿𝙸𝙴𝙳𝚁𝙰, 𝙿𝙰𝙿𝙴𝙻 𝙾 𝚃𝙸𝙹𝙴𝚁𝙰"*\n\n*𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂 𝙳𝙸𝚂𝙿𝙾𝙽𝙸𝙱𝙻𝙴𝚂:*\n*piedra, papel o tijera*\n\n*𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*${usedPrefix}ppt tijera*\n\n*- 𝚄𝚂𝙴 𝙻𝙰𝚂 𝙾𝙿𝙲𝙸𝙾𝙽𝙴𝚂 𝙴𝙽 𝙼𝙸𝙽𝚄𝚂𝙲𝚄𝙻𝙰𝚂 𝙲𝙾𝙼𝙾 𝚂𝙴 𝙸𝙽𝙳𝙸𝙲𝙰 𝙴𝙽 𝙴𝙻 𝙴𝙹𝙴𝙼𝙿𝙻𝙾*\n\n*𝘉𝘺 𝘛𝘩𝘦 𝘔𝘺𝘴𝘵𝘪𝘤 - 𝘉𝘰𝘵*`
-if (!text) throw INTROJUEGO
+let handler = async (m, { conn, text, command, usedPrefix, args }) => {
+let pp = 'https://www.bighero6challenge.com/images/thumbs/Piedra,-papel-o-tijera-0003318_1584.jpeg'
+if (!args[0]) throw conn.sendHydrated(m.chat, 'КАМЕНЬ, БУМАГА, ИЛИ НОЖНИЦЫ\n\Используйте КНОПКИ для игры ', wm, pp, null, null, null, null, [
+['Камень 🥌', `${usedPrefix + command} камень`],
+['Бумага 📄', `${usedPrefix + command} бумага`],
+['Ножницы ✂️', `${usedPrefix + command} ножницы`]
+], m)
 var astro = Math.random()
 if (astro < 0.34) {
-astro = 'piedra' 
+astro = 'камень' 
 } else if (astro > 0.34 && astro < 0.67) {
-astro = 'tijera' 
+astro = 'ножницы' 
 } else {
-astro = 'papel'
+astro = 'бумага'
 }
 if (text == astro) {
 global.db.data.users[m.sender].exp += 500
-m.reply(`*🔰 Empate!*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +500 XP*`)
-} else if (text == 'papel') {
-if (astro == 'piedra') {
+m.reply(`🔰 Не чия!\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
+} else if (text == 'бумага') {
+if (astro == 'камень') {
 global.db.data.users[m.sender].exp += 1000
-m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +1000 XP*`)
+m.reply(`🥳 Победа за Вами! 🎉\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 } else {
 global.db.data.users[m.sender].exp -= 300
-m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*❌ Puntos -300 XP*`)
+m.reply(`☠️ Вы проиграли! ❌\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 }
-} else if (text == 'tijera') {
-if (astro == 'papel') {
+} else if (text == 'ножницы') {
+if (astro == 'бумага') {
 global.db.data.users[m.sender].exp += 1000
-m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +1000 XP*`)
+m.reply(`🥳 Победа за Вами! 🎉\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 } else {
 global.db.data.users[m.sender].exp -= 300
-m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*❌ Puntos -300 XP*`)
+m.reply(`☠️ Вы проиграли! ❌\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 }
-} else if (text == 'tijera') {
-if (astro == 'papel') {
+} else if (text == 'ножницы') {
+if (astro == 'бумага') {
 global.db.data.users[m.sender].exp += 1000
-m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +1000 XP*`)
+m.reply(`🥳 Победа за Вами! 🎉\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 } else {
 global.db.data.users[m.sender].exp -= 300
-m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*❌ Puntos -300 XP*`)
+m.reply(`☠️ Вы проиграли! ❌\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 }
-} else if (text == 'papel') {
-if (astro == 'piedra') {
+} else if (text == 'бумага') {
+if (astro == 'камень') {
 global.db.data.users[m.sender].exp += 1000
-m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +1000 XP*`)
+m.reply(`🥳 Победа за Вами! 🎉\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 } else {
 global.db.data.users[m.sender].exp -= 300
-m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*❌ Puntos -300 XP*`)
+m.reply(`☠️ Вы проиграли! ❌\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}`)
 }
-} else if (text == 'piedra') {
-if (astro == 'tijera') {
+} else if (text == 'камень') {
+if (astro == 'ножницы') {
 global.db.data.users[m.sender].exp += 1000
-m.reply(`*🥳 Tú ganas! 🎉*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*🎁 Puntos +1000 XP*`)
+m.reply(`🥳 Победа за Вами! 🎉\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}*`)
 } else {
 global.db.data.users[m.sender].exp -= 300
-m.reply(`*☠️ Tú pierdes! ❌*\n\n*👉🏻 Usted: ${text}*\n*👉🏻 El Bot: ${astro}*\n*❌ Puntos -300 XP*`)
+m.reply(`☠️ Вы проиграли! ❌\n\n*👉🏻 Вы: ${text}\n👉🏻 Бот: ${astro}*`)
 }
-} else {
-throw INTROJUEGO
 }}
-handler.help = ['ppt']
+handler.help = ['игра']
 handler.tags = ['games']
-handler.command = /^(ppt)$/i
+handler.command = /^(игра)$/i
 export default handler

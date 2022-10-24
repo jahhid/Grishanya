@@ -144,5 +144,5 @@ throw er
 }}}
 handler.help = ['emoji <tipo> <emoji>']
 handler.tags = ['sticker'] 
-handler.command = ['стикерэмоции', 'smoji', 'semoji']
+handler.command = ['emoji', 'smoji', 'semoji']
 export default handler
