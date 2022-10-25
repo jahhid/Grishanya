@@ -28,8 +28,8 @@ orderMessage: {
 itemCount: 9999999,
 status: 1,
 surface: 1,
-message: 'Grishanyaᷦ', 
-orderTitle: `Grishanyaᷦᷦ`,
+message: '☆☬GRISHANYA☬☆ᷦ', 
+orderTitle: `☆☬GRISHANYA☬☆ᷦᷦ`,
 thumbnail: imagen1, 
 sellerJid: '0@s.whatsapp.net'}}}}
 if (command == 'playlist') {

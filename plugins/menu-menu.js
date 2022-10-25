@@ -63,7 +63,7 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
     
 
 let str = `
-*ミПривет ${name}, ПОЛНОЕ МЕНЮ Grishanya 彡*
+*ミПривет и Привет ${name}, ЗДЕСЬ ПОЛНОЕ МЕНЮ ☣ⒹⓞⓃ ⓀⓞⓂⓐⓇ☣ 彡*
 
 *📅 ДАТА: ${week}, ${date}*
 *📈 ВРЕМЯ АКТИВНОСТИ: ${uptime}*

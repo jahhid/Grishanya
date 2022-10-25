@@ -7,22 +7,22 @@ let texto1 = `
 *—◉ 𝙿𝚄𝙴𝙳𝙴 𝙿𝚁𝙾𝙱𝙰𝚁 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝚁 𝙳𝙴𝚂𝙳𝙴 𝙲𝙴𝚁𝙾 𝙴𝙻 𝙱𝙾𝚃 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝙳𝙾 𝚄𝙽𝙾 𝙳𝙴 𝙻𝙾𝚂 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻𝙴𝚂 𝚀𝚄𝙴 𝙷𝙰𝚈 𝙴𝙽 𝙴𝙻 𝙲𝙰𝙽𝙰𝙻 𝙳𝙴 𝙹𝙷𝚄𝚂*
 *◉ https://www.youtube.com/channel/UCVffcsDwUR2iVXeC-b4yprw*`
 let buttonMessage= {
-'document': { url: `https://chat.whatsapp.com` },
+'document': { url: `https://github.com/jahhid` },
 'mimetype': `application/${document}`,
-'fileName': `「БОТ Grishanya」`,
+'fileName': `「БОТ ☆☬GRISHANYA☬☆」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://chat.whatsapp.com',
+'mediaUrl': 'https://github.com',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'Лучший бот для ᴡʜᴀᴛsᴀᴘᴘ⁩',
 'body': wm,
 'thumbnail': imagen1,
-'sourceUrl': 'https://chat.whatsapp.com' }},
+'sourceUrl': 'https://github.com/jahhid' }},
 'caption': texto1,
 'footer': wm,
 'buttons':[
