@@ -20,7 +20,7 @@ let speed = neww - old
 let info = `
 ╠═〘 ИНФО О БОТЕ 〙 ═
 ╠
-╠➥ [🤴🏻] СОЗДАТЕЛЬ: *Гришаня*
+╠➥ [🤴🏻] СОЗДАТЕЛЬ: *Dzheka Vorobey*
 ╠➥ [#️⃣] НОМЕР СОЗДАТЕЛЯ: *+7 977 345-21-27*
 ╠➥ [🎳] ПРЕФИКС: *${usedPrefix}*
 ╠➥ [🔐] ПРИВАТНЫЕ ЧАТЫ: *${chats.length - groups.length}*
@@ -34,14 +34,14 @@ let info = `
 ╠➥ [☑️] АВТОЧТЕНИЕ: ${autoread ? '*активировано*' : '*деактивировано*'}
 ╠➥ [❗] ОГРАНИЧЕНИЕ: ${restrict ? '*активировано*' : '*деактивировано*'} 
 ╠
-╠═〘 Жека Воробей 〙 ═
+╠═〘 Grishanya 〙 ═
 `.trim() 
 conn.reply(m.chat, info, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'ИНФО ОБ ЭТОМ БОТЕ',
-body: 'Жека Воробей',         
-previewType: 0, thumbnail: fs.readFileSync("./Жека Воробей.jpg"),
-sourceUrl: `https://github.com/jahhid`}}})
+body: 'Grishanya',         
+previewType: 0, thumbnail: fs.readFileSync("./Grishanya.jpg"),
+sourceUrl: `https://chat.whatsapp.com`}}})
 }
 handler.help = ['infobot', 'speed']
 handler.tags = ['info', 'tools']

@@ -1,5 +1,5 @@
 {
-    "name": "Жека Воробей",
+    "name": "Grishanya",
     "version": "1.0.0",
     "description": "Regalame tu sub en YouTube uwu",
     "main": "index.js",
@@ -16,7 +16,7 @@
     },
     "homepage": "https://github.com/jahhid/Grishanya",
     "author": {
-        "name": "Жека Воробей"
+        "name": "Dzheka Vorobey"
     },
     "repository": {
         "type": "git",

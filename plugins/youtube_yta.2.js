@@ -7,7 +7,7 @@ if (!args || !args[0]) throw '*[❗ИНФО❗] 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 �
 await conn.reply(m.chat, `*_⏳Ожидайте идет загрузка файла...⏳_*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: 'АУДИОПЛЕЕР 𝚅𝟸',
-body: 'ʙʏ Жека Воробейᷦ',
+body: 'ʙʏ Grishanyaᷦ',
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com`}}})
 let chat = global.db.data.chats[m.chat]

@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /|eeesss putoo|es putoo|esputoo/i
+handler.customPrefix = /|смотри|посмотри|ай яй яй/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

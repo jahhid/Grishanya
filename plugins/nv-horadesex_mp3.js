@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /sexo|Бычара|Hora de sexo|hora de sexo/
+handler.customPrefix = /секс|Бычара|заебали|Достали/
 handler.command = new RegExp
 export default handler
 

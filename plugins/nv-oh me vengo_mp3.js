@@ -3,13 +3,13 @@ import path from 'path'
 
 let handler = async (m, { conn }) => {
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
-let vn = './media/vengo.mp3'
-conn.sendFile(m.chat, vn, 'vengo.mp3', null, m, true, {
+let vn = './media/dobroe utro.mp3'
+conn.sendFile(m.chat, vn, 'dobroe utro.mp3', null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })
 }
-handler.customPrefix = /ho me vengo|oh me vengo|o me vengo|Ho me vengo|Oh me vengo|O me vengo/
+handler.customPrefix = /Доброе утро|Салам|Салют|салют|Oh me vengo|O me vengo/
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100
