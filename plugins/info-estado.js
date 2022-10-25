@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let picture = './Grishanya.jpg'
+let picture = './Жека Воробей.jpg'
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
 let _muptime
@@ -8,8 +8,8 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
-╭─[ *Grishanya* ]
-│ *➤ Салют ${name}*
+╭─[ *Жека Воробей* ]
+│ *➤ Привет ${name}*
 │
 │ *ミ🤖 СТАТУС БОТА🤖彡*
 │ *=> АКТИВНЫЙ БОТ ✅*

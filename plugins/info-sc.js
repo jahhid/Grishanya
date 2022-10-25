@@ -5,7 +5,7 @@ let texto1 = `*https://github.com*`
 let buttonMessage= {
 'document': { url: `https://github.com` },
 'mimetype': `application/${document}`,
-'fileName': `「  Grishanya БоТ 」`,
+'fileName': `「  Жека Воробей БоТ 」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {

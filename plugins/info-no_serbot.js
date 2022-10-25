@@ -9,7 +9,7 @@ let texto1 = `
 let buttonMessage= {
 'document': { url: `https://github.com/jahhid` },
 'mimetype': `application/${document}`,
-'fileName': `「БОТ Grishanya」`,
+'fileName': `「БОТ Жека Воробей」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {

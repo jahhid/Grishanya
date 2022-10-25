@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /Женя|Евгений|дед/i
+handler.customPrefix = /Женя|cancion1|Marica quien/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100

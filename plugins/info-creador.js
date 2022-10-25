@@ -2,12 +2,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
-*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//++79997187212*
+*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//+79997187212*
 `.trim()   
 let buttonMessage= {
 'document': { url: `https://github.com` },
 'mimetype': `application/${document}`,
-'fileName': `「БОТ Grishanya 」`,
+'fileName': `「БОТ Жека Воробей 」`,
 'fileLength':'./Komar.jpg',
 'pageCount': 200,
 'contextInfo': {
