@@ -39,7 +39,7 @@ ADVERTENCIA: HEROKU ESTA SUSPENDIENDO CUENTAS POR SOLO USAR EL BOT, POR AHORA NO
 > pkg install imagemagick -y
 > pkg install yarn
 > git clone https://github.com/jahhid/Grishanya
-> cd Venom
+> cd Grishanya
 > yarn install 
 > npm install
 > npm update
