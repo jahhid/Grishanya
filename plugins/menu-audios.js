@@ -8,7 +8,7 @@ try {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let name = await conn.getName(m.sender)
 let str = `
-*ミ💖 Привет _${name}_ 💖彡*
+*ミ💖 Салют _${name}_ 💖彡*
 
 ╠═〘 СПИСОК ВОЗМОЖНОСТЕЙ БОТА И АРЕНДА 〙
 

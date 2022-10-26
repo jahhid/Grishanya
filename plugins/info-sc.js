@@ -5,14 +5,14 @@ let texto1 = `*https://github.com*`
 let buttonMessage= {
 'document': { url: `https://github.com` },
 'mimetype': `application/${document}`,
-'fileName': `「  ☆☬GRISHANYA☬☆ БоТ 」`,
+'fileName': `「  Grishanya БоТ 」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com',
+'mediaUrl': 'https://chat.whatsapp.com',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'Лучший бот для ᴡʜᴀᴛsᴀᴘᴘ⁩',

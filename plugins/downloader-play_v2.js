@@ -7,7 +7,7 @@ if (command == 'play.1') {
 conn.reply(m.chat, `*_⏳Ожидайте ваше аудио в процессе зазгрузки...⏳_*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝚁𝙴𝙿𝚁𝙾𝙳𝚄𝙲𝚃𝙾𝚁 𝙳𝙴 𝙰𝚄𝙳𝙸𝙾',
-body: 'ʙʏ ☆☬VeNoM☬',         
+body: 'ʙʏ ☆☬Grishanya☬',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com`}}})
 let res = await fetch("https://my-api-bice.vercel.app/api/ytplay?apikey=nktesla&q="+text)
@@ -17,7 +17,7 @@ if (command == 'play.2') {
 conn.reply(m.chat, `*_⏳Ожидайте ваше видео в процессе зазгрузки...⏳_*`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝚁𝙴𝙿𝚁𝙾𝙳𝚄𝙲𝚃𝙾𝚁 𝙳𝙴 𝚅𝙸𝙳𝙴𝙾',
-body: 'ʙʏ ☆☬VeNoM☬ᷦ',         
+body: 'ʙʏ ☆☬Grishanya☬ᷦ',         
 previewType: 0, thumbnail: fs.readFileSync("./Menu2.jpg"),
 sourceUrl: `https://github.com`}}})
 let res = await fetch("https://api.lolhuman.xyz/api/ytplay2?apikey=9b817532fadff8fc7cb86862&query="+text)

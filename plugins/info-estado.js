@@ -1,5 +1,5 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
-let picture = './Venom.jpg'
+let picture = './Grishanya.jpg'
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
 let _muptime
@@ -8,8 +8,8 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado =`
-╭─[ *☆☬GRISHANYA☬☆* ]
-│ *➤ Привет ${name}*
+╭─[ *Grishanya* ]
+│ *➤ Салют ${name}*
 │
 │ *ミ🤖 СТАТУС БОТА🤖彡*
 │ *=> АКТИВНЫЙ БОТ ✅*
@@ -18,7 +18,7 @@ let estado =`
 ╰───────────────
 `.trim()
 
-conn.sendHydrated(m.chat, estado, wm, picture, 'https://github.com', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, estado, wm, picture, 'https://chat.whatsapp.com', 'ГРУППА', null, null, [
 ['ГЛАВНОЕ МЕНЮ', '/меню']
 ], m)}
 

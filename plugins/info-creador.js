@@ -2,19 +2,19 @@ let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
-*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//+79997187212*
+*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//++79997187212*
 `.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com` },
+'document': { url: `https://chat.whatsapp.com` },
 'mimetype': `application/${document}`,
-'fileName': `「БОТ ☆☬GRISHANYA☬☆ 」`,
+'fileName': `「БОТ Grishanya 」`,
 'fileLength':'./Komar.jpg',
 'pageCount': 200,
 'contextInfo': {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com',
+'mediaUrl': 'https://chat.whatsapp.com',
 'mediaType': 2,
 'previewType': 'jpg',
 'title': 'ЛУЧШИЙ БОТ WhatsApp',

@@ -6,15 +6,15 @@ let donar =`
 *┏ ┅ ━━━━━━━━━ ┅ ━*
 *┇   「 ☬ССЫЛКА НА МОЮ ГРУППУ☬ 」*
 *┣ ┅ ━━━━━━━━━ ┅ ━*
-*┃ Привет ${name} 💙*
+*┃ Салют ${name} 💙*
 *┃*
-*┃ НЕ УЗНАВАЙ О БОТЕ*
-*┃ ФИГУШКИ ТЕБЕ А НЕ ГРИШАНЯ :𝟹*
+*┃ ХОЧЕШЬ УЗНАТЬ О БОТЕ*
+*┃ ИЛИ ХОЧЕШЬ ВЗЯТЬ В АРЕНДУ :𝟹*
 *┃*
 ┃ https://chat.whatsapp.com
 *┗ ┅ ━━━━━━━━━ ┅ ━*
 `.trim()
-conn.sendHydrated(m.chat, donar, wm, null, 'https://chat.whatsapp.com/KwZDOksu8Hx4IxXrNuhWJ8', 'НАЖМИ НА ССЫЛКУ', null, null, [['ГЛАВНОЕ МЕНЮ', '/меню']], m)}
+conn.sendHydrated(m.chat, donar, wm, null, 'https://chat.whatsapp.com/EWCRxPMC3w3CVV8ncqxxbh', 'НАЖМИ НА ССЫЛКУ', null, null, [['ГЛАВНОЕ МЕНЮ', '/меню']], m)}
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)|аренда|apoyar$/i
