@@ -1,7 +1,7 @@
 # `𝑁𝑜𝑡 𝐽ℎ𝑢𝑧-𝑀𝐷 `
 
 ### `—◉ 👑 DUDAS SOBRE EL BOT?, CONTACTAME 👑`
-<a href="http://wa.me/++79997187212" target="blank"><img src="https://chat.whatsapp.com" /></a>
+<a href="http://wa.me/++79939262066" target="blank"><img src="https://chat.whatsapp.com" /></a>
 > NO BOT
 
 ### `—◉ 🖍 LETRA DEL BOT 🖍`

@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true
 })
 }
-handler.customPrefix = /соски|Сиськи|грудь|сиськи|Noche de Paz/
+handler.customPrefix = /соски|Сиськи|грудь|ореол|Noche de Paz/
 handler.command = new RegExp
 export default handler
 
