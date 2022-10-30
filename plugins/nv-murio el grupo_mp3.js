@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /мясо|пельмени|шашлык|манты|Мясо|Шашлык/
+handler.customPrefix = /мясо|пельмени|шашлык|манты|хашлама|Шашлык/
 handler.command = new RegExp
 export default handler
