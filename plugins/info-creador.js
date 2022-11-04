@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `
-*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//++79939262066*
+*—◉ ЭТО НОМЕР МОЕГО СОЗДАТЕЛЯ wa.me//+88000000*
 `.trim()   
 let buttonMessage= {
 'document': { url: `https://chat.whatsapp.com` },
