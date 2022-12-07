@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /UwU|reshim|Uwu|uwU|UWU/
+handler.customPrefix = /жопа|попа|Uwu|uwU|UWU/
 handler.command = new RegExp
 export default handler
 

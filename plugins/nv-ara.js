@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /ara ara/i
+handler.customPrefix = /монастырь/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100
